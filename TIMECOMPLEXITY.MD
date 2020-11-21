@@ -31,7 +31,7 @@ Using the above values N² will always be greater than (N²/2) - (N/2)
 n² = 1, 000, 000
 (N²/2) - (N/2) = 499, 500
 
-When we talk about Big O, we want to know the tight bound of the function so it would not be appropriate to just assign some huge value to g(), such as 2n. 
+When we talk about Big O, we want to know the tight bound of the function so it would not be appropriate to just assign some huge value to g(), such as 2ⁿ. 
 
 ## Omega
 
