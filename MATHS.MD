@@ -15,6 +15,11 @@ n(n+1)
 = (n * n) + (n * 1)
 = n² + n
 
+## Absolute Value ##
+
+The absolute value of a real number  *x* is the non negative value of *x* without regard to its sign. What this means is the distance of *x* from 0 in either direction,
+so the absolute value of 3 is 3, and the absolute value of -3 is also 3 (the distance of -3 and 3 from 0 are both 3).
+
 ## Square Root
 
 A square root of a number is a value that, when multiplied by itself, gives the number.
