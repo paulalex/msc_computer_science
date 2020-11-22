@@ -35,6 +35,14 @@ Note that (−4) × (−4) = 16 too, so −4 is also a square root of 16.
 
 ## Quadratic Equations
 
+## Linear Equations
+
+## Summation
+
+## Sequences and Series
+
+## Sets and Probability
+
 ## Multiply Out and Combine Like Terms
 
 "Like terms" are terms whose variables (and their exponents such as the 2 in x2) are the same. In other words, terms that are "like" each other.
