@@ -13,7 +13,7 @@ Big-O notation is used to classify algorithms based on the based on the number o
 or worst case running time of a function. In plain words, Big O notation describes the complexity of your code using algebraic terms.
 
 When we calculate big O notation, we only care about the dominant terms, and we do not care about the coefficients. Since we want to analyze the growth with respect to the input 
-size, the coefficients which only multiply the number rather than growing with the input size do not contain useful information. The dominant term is the term that grows the fastest.
+size, the coefficients which only multiply the number rather than growing with the input size do not contain useful information. The dominant term is the term that grows the fastest, a good way to think about this is that when **x** gets really large, consider the following: x² + 25x + 2000, when x is a million or a billion, then the values other than x² are insignificant.
 
 For large values of x: x², 3x² + 25, 4x² + 7x + 75 which are all similar we will treat them all as the same order O(x²).
 
