@@ -36,11 +36,39 @@ Note that (−4) × (−4) = 16 too, so −4 is also a square root of 16.
 
 ## Algebraic Formulas
 
-## Polynomials
+## Polynomial Function
 
-## Quadratic Equations
+A polynomial function is a function such as a quadratic, a cubic, a quartic, and so on, involving only non-negative integer powers of *x*. 
 
-## Linear Equations
+We can give a general definition of a polynomial, and define its degree. For example:
+
+This function is a polynomial of degree 3, as 3 is the highest power of *x* in the formula. This is called a cubic
+polynomial, or just a cubic.
+
+f(x) = 4x³ − 3x² + 2
+
+This is a polynomial of degree 2, as 2 is the highest power of x. This is called a quadratic.
+
+f(x) = 4x² − 2x − 4
+
+
+## Constant Function
+
+f(x) = 2 is a constant function.
+
+## Linear Equation
+
+ f(x) = 2x + 1 is a linear function.
+
+## Quadratic Equation
+
+The generalised quadratic equation is of the form: y = ax2 + bx + c
+
+This is because quadratic is a special name we use in maths for order two polynomials. A polynomial is any function which contains multiple powers of the independent variable (x) with appropriate coefficients. The order of the polynomial is equal to its highest power of x.
+
+A simple example is as follows:
+
+f(x) = 4x² − 2x − 4 is a quadratic function.
 
 ## Summation
 
