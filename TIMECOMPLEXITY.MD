@@ -4,8 +4,16 @@ In mathematical analysis, asymptotic analysis, also known as asymptotics, is a m
 
 
 ## Time Complexity Table
-
-
+| Big-Oh | Informal Name |
+|--------|---------------|
+| O(1)	| constant |
+| O(lgn)	| logarithmic |
+| O(n)	| linear |
+| O(nlgn) | nlgn |
+| O(n2) | quadratic |
+| O(n3) | cubic |
+| O(2n) | exponential |
+| O(n!) | factorial |
 
 ## Big-O
 
