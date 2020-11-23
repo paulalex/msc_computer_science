@@ -2,7 +2,11 @@
 
 ## Cormen et al, (2009). Introduction to Algorithms. 3rd ed. MIT Press
 
-## Week 4: Required Reading
+1. [Week 4](#Week-4)
+
+## Week 4
+
+##  Required Reading
 
 ### Lesson 1
 
@@ -22,7 +26,7 @@ Chapter 10 (10.2) pp. 236-240.
 
 Cormen et al, (2009). Introduction to Algorithms. 3rd ed. MIT Press.
  
-## Week 4: Further Reading
+Further Reading
 
 Chapter 1 (1.1) pp.5-6 and (1.2) pp. 11-12 (skip sorting algorithms)
 
