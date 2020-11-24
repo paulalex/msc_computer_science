@@ -2,18 +2,35 @@
 
 ## Some Basic Rules
 
+| Left Sign | Right Sign | Output |
+-----------------------------------
+|     +     |     +      |    +   |
+|     +     |     -      |    -   |
+|     -     |     +      |    -   |
+|     -     |     -      |    +   |
+
+
+
 Two minuses make a plus so: - (-32) = 32:
 
 = -2*(3) - 4*(-8)
 = -6 - (-32)
 = - 6 + 32 = 26
 
-When simplifying a multiplication:
+When simplifying a multiplication, multiply out, remove parentheses and then combine like terms:
 
 n(n+1)
 
-= (n * n) + (n * 1)
-= n² + n
+= (n * n) + (n * 1) = n² + n
+
+When simplifying equations **IF** there is no coefficient before a set of brackets it always be a multiplication of 1, and this can be verty confusing,
+taking the following simplification:
+
+(5y - 6) - (4 - 7y) = 5y - 6 - 4 **+ 7y**
+
+It might not appear obvious at first where the +7 comes from, but remember multiply two negative numbers and you will get a positive number:
+
+(5y - 6) - (-1 * 4) + (-1 * -7) = 5y - 6 - 4 **+ 7y**
 
 ## Absolute Value ##
 
