@@ -78,7 +78,7 @@ f(x) = 4x² − 2x − 4
 
 f(x) = 2 is a constant function.
 
-## Linear Equation
+## Linear Function
 
  f(x) = 2x + 1 is a linear function.
 
