@@ -10,11 +10,15 @@
 |     -     |     -      |    +   |
 
 
-Two minuses make a plus so: - (-32) = 32:
+### Two minuses make a plus 
+
+So: - (-32) = 32:
 
 = -2*(3) - 4*(-8)
 = -6 - (-32)
 = - 6 + 32 = 26
+
+### Simplifying Equations
 
 When simplifying a multiplication, multiply out, remove parentheses and then combine like terms:
 
@@ -33,7 +37,7 @@ It might not appear obvious at first where the +7 comes from, but remember multi
 
 ## Absolute Value ##
 
-The absolute value of a real number  *x* is the non negative value of *x* without regard to its sign. What this means is the distance of *x* from 0 in either direction,
+The absolute value of a real number *x* is the non negative value of *x* without regard to its sign. What this means is the distance of *x* from 0 in either direction,
 so the absolute value of 3 is 3, and the absolute value of -3 is also 3 (the distance of -3 and 3 from 0 are both 3).
 
 ## Square Root
