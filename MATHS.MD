@@ -2,6 +2,8 @@
 
 ## Some Basic Rules
 
+### How signs affect multiplication
+
 | Left Sign | Right Sign | Output |
 |-----------|------------|--------|
 |     +     |     +      |    +   |
