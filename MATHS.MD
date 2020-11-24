@@ -28,7 +28,7 @@ n(n+1)
 
 = (n * n) + (n * 1) = n² + n
 
-When simplifying equations **IF** there is no coefficient before a set of brackets it always be a multiplication of 1, and this can be verty confusing,
+When simplifying equations **IF** there is no coefficient before a set of brackets it always be a multiplication of 1, and this can be confusing,
 taking the following simplification:
 
 (5y - 6) - (4 - 7y) = 5y - 6 - 4 **+ 7y**
