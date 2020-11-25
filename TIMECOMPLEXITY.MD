@@ -54,19 +54,21 @@ How can we show that: 3x² + 25 = O(x²)?
 
 f(x) = 3x² + 25
 
-g(x) = C * (3x²)
+g(x) = C * (x²)
 
 ### Assign a starting value to x
+
 x = 5
 
 ### Calculate for x
+
 3x² + 25 = 3(5²) + 25 = 3 * 25 + 25 = 100
 
 Now can we prove that: 
 
-*C*(5²) ≥ 100 and as such *C* * 25 ≥ 100
+*C*(5²) ≥ 100 = *C* * 25 ≥ 100
 
-So we can easily see that 4 fits this because: 4 * 25 = 100
+So we can easily see that **4** fits this because: *4 * 25 = 100*
 
 So using this method we have found values for **k** and **C**: *k* = 5, *C* = 4
 
@@ -76,21 +78,23 @@ x = 6
 k = 5
 C = 4
 
-3(6²) + 25 = 133
+f(x) = 3(6²) + 25 = 133
 
-4(6²) = 144
+g(x) = 4(6²) = 144
 
-**Bumping everything up to the greatest power**
+So f(x) is now **bounded** by g(x)
+
+**Now we can bump everything up to the greatest power**
 
 3x² + 25 ≤ 3x² + 25x²
 
 3x² + 25x² = 28x²
 
-3x² + 25x² ≥ 3x² + 25 when x > 1
+3x² + 25x² ≥ 3x² + 25 when x >= 1
 
-It is important to remember that x must be greater than one for this to be true, because 0.5 * 0.5 = 0.25!
+It is important to remember that x must be greater than or equal to one for this to be true, because 0.5 * 0.5 = 0.25!
 
-However as long as x > 1 we now have values for C and k.
+However as long as x > 1 we now have values for C and k:
 
 C = 28
 k = 1
@@ -99,7 +103,13 @@ We only need to find ***ANY*** C and k value that work.
 
 ## Big Omega
 
-Omega(n) is asymptotic lower bound, or best case running time for a function. If T(n) is Omega(f(n)), it means that from a certain *n0*, there is a constant *C1* such that T(n) >= C1 * f(n). Whereas big-O says there is a constant C2 such that T(n) <= C2 * f(n)).
+Omega(n) is asymptotic lower bound, or best case running time for a function. If T(n) is Omega(f(n)), it means that from a certain *n0*, there is a constant *C1* such that:
+
+T(n) >= C1 * f(n) 
+
+Whereas big-O says there is a constant C2 such that:
+
+T(n) <= C2 * f(n)).
 
 ## Big Theta
 
