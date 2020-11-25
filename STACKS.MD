@@ -39,6 +39,8 @@ If an attempt is made to pop an empty stack then a **stack underflow** occurs an
 
 ## Stack Operations
 
+Each of the following stack operations takes O(1) (constant) time.
+
 ### EMPTY
 
 ```pseudocode
