@@ -27,6 +27,6 @@ These three instructions all take Θ(1) time on a standard machine and so this i
 ## Diagram of an Array
 
 <p align="center">
-  <img src="images/array.png">
+  <img src="images/array.PNG">
 </p>
 
