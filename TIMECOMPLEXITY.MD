@@ -31,37 +31,44 @@ size, the coefficients which only multiply the number rather than growing with t
 
 For large values of x: x², 3x² + 25, 4x² + 7x + 75 which are all similar we will treat them all as the same order O(x²).
 
-**Big O**: f(n) is O(g(n)) if for some constants c and N₀, f(n) ≤ c * g(n) for all N > N₀
+**Big O**: f(n) is O(g(n)) if for some constants *C* and *k*, f(n) ≤ *C* * g(n) for all *n* > *k*
 
 ***What this means is that f(n) grows no faster that g(n).***
 
-g(n) = n²
-c = 1
-N₀ = 0
-n = 1000
+* g(n) = n²
+* c = 1
+* N₀ = 0
+* n = 1000
 
 Using the above values N² will always be greater than (N²/2) - (N/2)
 
 n² = 1, 000, 000
+
 (N²/2) - (N/2) = 499, 500
 
 When we talk about Big O, we want to know the tight bound of the function so it would not be appropriate to just assign some huge value to g(), such as 2ⁿ.
 
-How can we show that: 3x² + 25 is O(x²)?
+How can we show that: 3x² + 25 = O(x²)?
 
 **Manually**
 
+f(x) = 3x² + 25
+
+g(x) = C * (3x²)
+
+### Assign a starting value to x
 x = 5
 
-3x² + 25 = 3(5²) + 25 = 25 * 3 + 25 = 100
+### Calculate for x
+3x² + 25 = 3(5²) + 25 = 3 * 25 + 25 = 100
 
-Can we prove that: 
+Now can we prove that: 
 
-C(5²) ≥ 100 and as such c * 25 ≥ 100
+*C*(5²) ≥ 100 and as such *C* * 25 ≥ 100
 
 So we can easily see that 4 fits this because: 4 * 25 = 100
 
-So using this method we have found values for **k** and **C**: k = 5, C = 4
+So using this method we have found values for **k** and **C**: *k* = 5, *C* = 4
 
 Up to this point we have shown that f(x) is *equal* to Cg(x) when k = x and now we need to prove that for all values of x > k this holds true.
 
