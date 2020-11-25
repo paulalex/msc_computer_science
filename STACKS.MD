@@ -31,4 +31,6 @@ The stack data structure is a type of **dynamic set** and a deleted element is t
 
 The insert operation on a stack is commonly called a **PUSH** operation and the delete operation on a stack is commonly called a **POP** operation.
 
-
+<p align="center">
+  <img src="images/stack.PNG">
+</p>
