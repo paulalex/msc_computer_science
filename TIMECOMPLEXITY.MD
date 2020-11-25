@@ -4,7 +4,7 @@ In mathematical analysis, asymptotic analysis, also known as asymptotics, is a m
 
 
 ## Time Complexity Table
-| Big-Oh | Informal Name |
+| Big-Oh | Informal Name |    
 |--------|---------------|
 | O(1)	| constant |
 | O(lgn)	| logarithmic |
@@ -14,6 +14,12 @@ In mathematical analysis, asymptotic analysis, also known as asymptotics, is a m
 | O(n3) | cubic |
 | O(2n) | exponential |
 | O(n!) | factorial |
+
+## Time Complexity Chart
+
+<p align="center">
+  <img src="images/algorithm_complexity.PNG">
+</p>
 
 ## Big-O
 
