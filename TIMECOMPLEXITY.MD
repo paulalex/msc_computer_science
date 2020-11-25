@@ -1,6 +1,6 @@
 # Time complexity of Algorithms
 
-In mathematical analysis, asymptotic analysis, also known as asymptotics, is a method of describing limiting behavior.
+In mathematical analysis, asymptotic analysis, also known as asymptotics, is a method of describing limiting behavior. When we use big-Θ notation, we're saying that we have an asymptotically tight bound on the running time. **Asymptotically"=** because it matters for only large values of *n*. **Tight bound** because we've nailed the running time to within a constant factor above and below, asymptotic information is related to large input size.
 
 
 ## Time Complexity Table
@@ -84,6 +84,12 @@ k = 1
 
 We only need to find ***ANY*** C and k value that work.
 
-## Omega
+## Big Omega
 
-## Theta
+Omega(n) is asymptotic lower bound, or best case running time for a function. If T(n) is Omega(f(n)), it means that from a certain *n0*, there is a constant *C1* such that T(n) >= C1 * f(n). Whereas big-O says there is a constant C2 such that T(n) <= C2 * f(n)).
+
+## Big Theta
+
+Big Theta gives both lower and upper bounds, so with Theta notation you know that it will not be faster than Big-O that is, there is no best-case scenario where the algorithm will return faster. If Big-O and Big Omega are the same then a function is said to be Theta(n).
+
+Everything that is Theta(f(n)) is also O(f(n)), but not the other way around. T(n) is said to be Theta(f(n)), if it is both O(f(n)) and Omega(f(n)).
