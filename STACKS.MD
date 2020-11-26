@@ -3,13 +3,9 @@
 
 Mathematical sets are static while sets in Computer Science are dynamic. Elements in a set are represented by an object (say **x**) and an object contains a key field (say **k**) and some *satellite data*. General operations on a dynamic set **S** include:
 
-* SEARCH (S, k)
-* INSERT (S, x)
-* DELETE (S, x)
-* MINIMUM (S)
-* MAXIMUM (S)
-* SUCCESSOR (S, x)
-* PREDECESSOR (S, x)
+<p align="center">
+  <img src="images/set_operations.PNG">
+</p>
 
 ## Satellite Data
 
