@@ -35,6 +35,8 @@ Chapter 3 (3.1) pp.43-49
 
 ##  Required Reading
 
+## Cormen et al, (2009). Introduction to Algorithms. 3rd ed. MIT Press
+
 
 ## Further Reading
 
