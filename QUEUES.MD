@@ -18,6 +18,6 @@ In the diagram above the queue is *circular* in that elements reside within the 
 
 ## Pseudocode for Queue Operations
 
-<p align="center">
+<p align="left">
   <img src="images/queue_operations.PNG">
 </p>
