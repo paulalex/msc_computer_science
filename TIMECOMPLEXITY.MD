@@ -21,6 +21,10 @@ In mathematical analysis, asymptotic analysis, also known as asymptotics, is a m
   <img src="images/algorithm_complexity.PNG">
 </p>
 
+## Amortized Time
+
+A function is said to have an *amortized* time such as O(n)+ if some operations may take longer at times but over averaged over a large number of calls do not affect the overall runtime. A good way to think about this is to think of a dynamic array, now arrays have a size fixed at creation time, consider a dynamic array of size 4, inserting elements 1-4 is constant time O(1), however inserting element 5 will not be because a new array will be created, elements 1-4 will be copied to this new array and then element 5 will be inserted into position 4 of the newly sized array, however the insertion time for a dynamic array is still considered to be O(1).
+
 ## Big-O
 
 Big-O notation is used to classify algorithms based on the based on the number of operations or comparisons they use, typically big-O is used to the define the upper bounds, 
