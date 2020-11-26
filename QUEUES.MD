@@ -11,3 +11,13 @@ A queue has a **head** and a **tail** and when an element is enqueued it takes i
 <p align="center">
   <img src="images/queue.PNG">
 </p>
+
+## Circular Queue
+
+In the diagram above the queue is *circular* in that elements reside within the queue data structure between *Q.head*...*Q.tail - 1* and *Q.tail* always points to the next available slot for an element joining the queue to be placed into, when a queue is initialised *Q.head* = *Q.tail* = 1 (or zero in zero based arrays). If an attempt is made to dequeue an element from an empty queue the queue is said to **underflow**. When *Q.head = *Q.tail + 1* the queue is said to be full and any attempts to enqueue a new element will result in a **queue overflow**.
+
+## Pseudocode for Queue Operations
+
+<p align="center">
+  <img src="images/queue_operations.PNG">
+</p>
