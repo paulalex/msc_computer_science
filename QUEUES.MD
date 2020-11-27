@@ -21,3 +21,11 @@ In the diagram above the queue is *circular* in that elements reside within the 
 <p align="left">
   <img src="images/queue_operations.PNG">
 </p>
+
+# Maximum items in a queue
+
+As the queue is deemed to be full when *Q.head = Q.tail + 1* the queue will always be full at *n - 1*. See the following diagram:
+
+<p align="left">
+  <img src="images/full_queue.PNG">
+</p>
