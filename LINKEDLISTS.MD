@@ -7,3 +7,7 @@ A linked list can take several forms, the list can be singly or doubly linked, i
 If the list ic **circular** in nature then the *prev* pointer of the head elements points to the **tail** element and the *next* pointer of the tail element points to the *head* element and the list can be thought of as a *ring* of elements.
 
 # Linked List Diagram
+
+<p align="center">
+  <img src="images/linked_list.PNG">
+</p>
