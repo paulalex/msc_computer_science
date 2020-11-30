@@ -11,3 +11,31 @@ If the list ic **circular** in nature then the *prev* pointer of the head elemen
 <p align="center">
   <img src="images/linked_list.PNG">
 </p>
+
+# Linked List Operations
+
+## Search
+
+The function *LIST-SEARCH(L, k)* below finds the first element in the list *L* with the key *k* using a linear search and then returns a reference to *k*, if no object matching *k* is found then the function returns *NIL*.
+
+<p align="left">
+  <img src="images/linked_list_search.PNG">
+</p>
+
+## Insert
+
+<p align="left">
+  <img src="images/linked_list_insert.PNG">
+</p>
+
+## Delete
+
+<p align="left">
+  <img src="images/linked_list_delete.PNG">
+</p>
+
+# List Sentinel
+
+<p align="left">
+  <img src="images/linked_list_sentinel.PNG">
+</p>
