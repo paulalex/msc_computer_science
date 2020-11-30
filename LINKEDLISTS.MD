@@ -42,7 +42,7 @@ A list sentinel is a dummy object that allows the simplication of boundary condi
   <img src="images/linked_list_sentinel.PNG">
 </p>
 
-Sentinels rarely reduce the asymtotic time bounds of data structures but they do enable the simplification of code and can help to reduce constant factors in functions, often the gain from use of sentinels is one of clarity, rather than speed although in certain situations such as in a loop a sentinel can reduce the coefficient *n* with regard to running time.
+Sentinels rarely reduce the asymtotic time bounds of data structures but they do enable the simplification of code and can help to reduce constant factors in functions, often the gain from use of sentinels is one of clarity, rather than speed although in certain situations such as in a loop a sentinel can reduce the coefficient of say *n* with regard to running time.
 
 Sentinels should be used sparingly, when there are many small lists the additional storage overhead of sentinels can lead to memory waste.
 
