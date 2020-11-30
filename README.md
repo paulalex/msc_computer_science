@@ -10,4 +10,5 @@ A set of notes based on the modules for the Msc Computer Science with Cyber Secu
      5. [Arrays](ARRAYS.MD)
      6. [Stacks](STACKS.MD)
      7. [Queues](QUEUES.MD)
+     8. [Linked Lists](LINKEDLISTS.MD)
      
