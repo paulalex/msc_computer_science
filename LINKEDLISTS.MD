@@ -36,11 +36,19 @@ The function *LIST-SEARCH(L, k)* below finds the first element in the list *L* w
 
 # List Sentinel
 
-<p align="left">
+A list sentinel is a dummy object that allows the simplication of boundary conditions, a list *L* has an object *L.nil* that represents *NIL* but has all of the attributes of other elements in the list such as *next*, *previous* and whereever we previously had a reference to *NIL* in the code, we can now replace this with a reference to *L.nil*. The effect of this is that doubly linked list now becomes a **circular doubly linked list with sentinel**, where the sentinel *L.nil* lies between the *head* and the *tail* of the list. *L.nil.next* points to the head of the list, and *L.nil.previous* points to the tail of the list, this means any references to *L.head* can be removed.
+
+<p align="center">
   <img src="images/linked_list_sentinel.PNG">
 </p>
 
+Sentinels rarely reduce the asymtotic time bounds of data structures but they do enablr the simplification of code and can help to reduce constant factors in functions, often the gain from use of sentinels is one of clarity, rather than speed although in certain situations such as in a loop a sentinel can reduce the coefficient *n* with regard to running time.
+
+Sentinels should be used sparingly, when there are many small lists the additional storage overhead of sentinels can lead to memory waste.
+
 ## Search with Sentinel
+
+The code for the list search remains largely the same, with references *L.head* replaced with references to *L.nil*.
 
 <p align="left">
   <img src="images/linked_list_search_sentinel.PNG">
@@ -48,11 +56,15 @@ The function *LIST-SEARCH(L, k)* below finds the first element in the list *L* w
 
 ## Insert with Sentinel
 
+The code for the list insert remains largely the same, with references *L.head* replaced with references to *L.nil*.
+
 <p align="left">
   <img src="images/linked_list_insert_sentinel.PNG">
 </p>
 
 ## Delete with Sentinel
+
+The code for list delete is simpler as boundary conditions can now be removed.
 
 <p align="left">
   <img src="images/linked_list_delete_sentinel.PNG">
