@@ -39,3 +39,21 @@ The function *LIST-SEARCH(L, k)* below finds the first element in the list *L* w
 <p align="left">
   <img src="images/linked_list_sentinel.PNG">
 </p>
+
+## Search with Sentinel
+
+<p align="left">
+  <img src="images/linked_list_search_sentinel.PNG">
+</p>
+
+## Insert with Sentinel
+
+<p align="left">
+  <img src="images/linked_list_insert_sentinel.PNG">
+</p>
+
+## Delete with Sentinel
+
+<p align="left">
+  <img src="images/linked_list_delete_sentinel.PNG">
+</p>
