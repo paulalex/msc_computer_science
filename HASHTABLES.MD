@@ -40,16 +40,82 @@ For alphanumeric keys the sum of the ASCII code values of the characters that ma
 
 Another method that can be used is **folding** where a number such as a telephone number of 01452 8345654 becomes `01 + 45 + 28 + 34 + 56 + 54 = 218` and this may then be divided by some constant ***c*** and the remainder used as the index value.
 
-Hashing algorithms will always have the potential to generate the same hashcode for a different key, and when this happens a ***collision*** occurs
+Hashing algorithms will always have the potential to generate the same hashcode for a different key, and when this happens a ***collision*** occurs.
+
+A good hash function satifies (approximately) the assumption of ***simple uniform hashing***, where each key is equally likely to hash to any of the available slots.
 
 ## Collisions
 
-### Open Addressing
+When the hash function of two different keys produces the same hashed value then two keys will be hashed to the same slot, this is known as a collision.
 
-### Closed Addressing
+Whilst the ideal scenario is a hashing algorithm that does not produce, or at least minimises collisions there are effective techniques for resolving conflicts related to collisions.
+
+One idea is to make *h* appear to be 'random' therefore attempting to limit collisions, but a hashing algorithm must be deterministic in that it should always produce the same output for a given input *k*.
+
+So whilst a well designed hashing algorithm can go a long way towards *minimising* collisions we still need a mechanism for dealing with them when they do occur.
+
+### Open Hashing
+
+The term open hashing refers to the fact that items are not closed to be storing in the hashtables internal array.
+
+#### Chaining
+
+With ***chaining*** all elements that hash to the same slot as placed into the same linked list, when a new item needs to be stored it is saved at the head of the list, so inserting an element runs in `O(1)` time.
+
+For searching, the run time is proportional to the length of the linked list, an element can be deleted in `O(1)` if the list is doubly linked, a singly linked list has the same deletion runtime as searching because an element *x* has to be located first so its ***previous***.
+
+#### Load Factor
+
+A load factor is applied to a hashtable that is using chaining, the load factor ∝ for *T* is *n* / *m*, that is the average number of elements stored in a chain.
+
+#### Simple Uniform Hashing
+
+This is the assumption that any element equally likely to hash into any of the *m* slots, independently of where any other element hashed to.
+
+<p align="left">
+  <img src="images/chaining_operations.PNG">
+</p>
+
+The average case complexity of chaining is dependent on the hashing algorithm being used, clearly the worst case is that all keys hash to the same value and so the hashtable ends up being a list of *n* items.
+
+### Open Addressing (Closed Hashing)
+
+The term closed hashing refers to the fact that items are closed, that is they never leave the hashtables internal array, unlike chaining described above where only a reference to the first 'chained' item is stored in the hashtables array.
+
+In open addressing all element occupy the hashtable, each table contains either an element of the dynamic set or `NIL`, no elements are stored outside the table unlike with chaining.
+
+With open addressing the hashtable can fill up so that no further insertions can be made, as such the load factor ∝ can never exceed 1. One advantage of open addressing is that the use of pointers is completely avoided, instead of using pointers the address is *computed*.
+
+Rehashing schemes, where the hash is recalculated if there is a collision are used when open addressing is being used.
 
 #### Linear Probing
 
+Linear probing is the most simple of techniques for finding a new slot when a collision occurs, the rehashing function simply adds +1 to the generated hash, if that slot is occupied then the same is done again until an empty slot is found. If the end of the array is reached then the array is searched from the beginning up until `h(k) - 1`.
+
+Linear probing is easy to implement but it suffers from a problem known as ***primary clustering***, long runs of occupied slots build up increasing the average search time.
+
+Clusters arise because an empty slot preceded by *i* full slots gets filled next with probability (*i* + 1) / *m*. Long runs of occupied slots tend to get longer and the average search time increases.
+
 #### Quadratic Probing
 
+Quadratic probing uses a hash function of the form (`h'` is a auxilliary hashing function):
+
+`h(k, i) = (h'(k) + c1 * i + c2 * i^2) mod m`
+
+This method works better than linear probing but in order to make full use of the hashtable the values of c1, c2 and m are constrained. If two keys have the initial probe then their probe sequence will be the same and this can lead to a mild form of clustering calling ***secondary clustering***, as with linear probing the initial probe determines the entire sequence so only *m* distinct probe sequences are used.
+
+The course notes describe the quadratic probing function to operation like:
+
+* Examine `h + 1`
+* Examine `h + 2^2`
+* Examine `h + 3^2`
+* Examine `h + 4^2`
+
+And so on..
+
 #### Double Hashing
+
+Double hashing offers one of the best methods available for open addressing because the permutations produced have many of the characteristics of randomly
+chosen permutations.
+
+The initial probe goes to position `T[h1(k)]` successive probe positions are offset from previous positions by the amount h2(k), modulo *m*. Thus, unlike the case of linear or quadratic probing, the probe sequence here depends in two ways upon the key k, since the initial probe position, the offset, or both, may vary.
