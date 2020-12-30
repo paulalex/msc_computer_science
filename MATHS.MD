@@ -28,14 +28,14 @@ n(n+1)
 
 = (n * n) + (n * 1) = n² + n
 
-When simplifying equations **IF** there is no coefficient before a set of brackets it always be a multiplication of 1, and this can be confusing,
+When simplifying equations **IF** there is no coefficient before a set of brackets it will always be a multiplication of 1, and this can be confusing,
 taking the following simplification:
 
 (5y - 6) - (4 - 7y) = 5y - 6 - 4 **+ 7y**
 
 It might not appear obvious at first where the +7 comes from, but remember multiply two negative numbers and you will get a positive number:
 
-(5y - 6) - (-1 * 4) + (-1 * -7) = 5y - 6 - 4 **+ 7y**
+(5y - 6) (-1 * 4) (-1 * -7y) = 5y - 6 - 4 ***+ 7y***
 
 ## Absolute Value ##
 
@@ -72,7 +72,6 @@ f(x) = 4x³ − 3x² + 2
 This is a polynomial of degree 2, as 2 is the highest power of x. This is called a quadratic.
 
 f(x) = 4x² − 2x − 4
-
 
 ## Constant Function
 
