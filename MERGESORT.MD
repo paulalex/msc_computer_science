@@ -1,8 +1,8 @@
 # Merge Sort Algorithm
 
-Insertion is a ***divide and conquer*** sorting algorithm which can achieve a lower order of growth than insertion sort in the worst case. Merge sort breaks the problem down in smaller and smaller sub problems recursively until it is sorting a single element which is naturally sorted.
+Mergesort is a ***divide and conquer*** sorting algorithm which can achieve a lower order of growth than insertion sort in the worst case. Merge sort breaks the problem down in smaller and smaller sub problems recursively until it is sorting a single element which is naturally sorted, merge sort still sorts in place and the original unsorted array plus pointers to track sub arrays are passed down recursively.
 
-These solved sub-problems are then ***merged*** back together to form the sorted array, and so insertion sort takes in the order of `Ө(n2)` in the worst case.
+These solved sub-problems are then ***merged*** back together to form the sorted array, and so merge sort takes in the order of `Ө(n log n)` in the worst case and `Ө(n log n)` in the best case.
 
 ## Divide and Conquer
 
