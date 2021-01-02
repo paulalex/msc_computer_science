@@ -57,4 +57,20 @@ If the graph is ***dense***, *E* is close to *V* or if we quickly need to tell i
 
 ## Depth First Searching
 
+In depth first search we take a `Stack` data structure and we can again start traversal from any vertex we like so we pick one.
+
+We then look at what vertexes are adjacent to the selected vertex, however we now start exploring one of the adjacent vertexes, we add the initially selected vertex to our stack to suspend it and start exploring the next selected vertex.
+
+<p align="left">
+  <img src="images/dfs.PNG">
+</p>
+
 ## Breadth First Searching
+
+In breadth first search we can select any vertex to investigate, and from that vertex we will add it to a `Queue`, as we examine its adjacent vertexes we add these to the `Queue` and ensure that we only pick items from the queue to continue searching.
+
+The resulting tree that we create is called a ***Breadth First Search Spanning Tree***.
+
+<p align="left">
+  <img src="images/bfs.PNG">
+</p>
