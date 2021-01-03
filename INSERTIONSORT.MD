@@ -2,7 +2,7 @@
 
 Insertion is a sorting algorithm that sorts *n* real numbers in an array. It sorts ***in place*** and therefore uses less memory space since only a constant number of elements are ever kept outside of the array being sorted. Whilst insertion sorts time complexity is `Θ(n^2)` it has a very tight code meaning the constant factor is low and the running time is small, insertion sort is suitable for sorting small input sizes.
 
-Merge sort has a better asymptotic running time, `Θ(n log n), but the `MERGE` procedure does sort in place.
+Merge sort has a better asymptotic running time, `Θ(n log n)`, but the `MERGE` procedure does sort in place.
 
 <p align="left">
   <img src="images/sorting_run_time_table.PNG">
