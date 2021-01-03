@@ -42,3 +42,9 @@ The `HEAPSORT` procedure takes time `O(n log n)`, since the call to `BUILD-MAXHE
 <p align="left">
   <img src="images/heap_sort.PNG">
 </p>
+
+## Max Heapify
+
+<p align="left">
+  <img src="images/max_heapify.PNG">
+</p>

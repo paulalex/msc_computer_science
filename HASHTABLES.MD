@@ -70,7 +70,7 @@ A load factor is applied to a hashtable that is using chaining, the load factor 
 
 #### Simple Uniform Hashing
 
-This is the assumption that any element equally likely to hash into any of the *m* slots, independently of where any other element hashed to.
+This is the assumption that any element is equally likely to hash into any of the *m* slots, independently of where any other element hashed to.
 
 <p align="left">
   <img src="images/chaining_operations.PNG">
@@ -80,9 +80,9 @@ The average case complexity of chaining is dependent on the hashing algorithm be
 
 ### Open Addressing (Closed Hashing)
 
-The term closed hashing refers to the fact that items are closed, that is they never leave the hashtables internal array, unlike chaining described above where only a reference to the first 'chained' item is stored in the hashtables array.
+The term closed hashing refers to the fact that items are closed, that is they never leave the hashtables internal array, unlike chaining described above where only a reference to the first 'chained' item is stored in the hashtables array, ***Open Addressing*** refers to the fact that the elements can *spill out* of their preferred place in the underlying array if a collision happens and so occupy some other slot.
 
-In open addressing all element occupy the hashtable, each table contains either an element of the dynamic set or `NIL`, no elements are stored outside the table unlike with chaining.
+In open addressing all elements occupy the hashtable, each table contains either an element of the dynamic set or `NIL`, no elements are stored outside the table unlike with chaining.
 
 With open addressing the hashtable can fill up so that no further insertions can be made, as such the load factor ∝ can never exceed 1. One advantage of open addressing is that the use of pointers is completely avoided, instead of using pointers the address is *computed*.
 
@@ -95,6 +95,8 @@ Linear probing is the most simple of techniques for finding a new slot when a co
 Linear probing is easy to implement but it suffers from a problem known as ***primary clustering***, long runs of occupied slots build up increasing the average search time.
 
 Clusters arise because an empty slot preceded by *i* full slots gets filled next with probability (*i* + 1) / *m*. Long runs of occupied slots tend to get longer and the average search time increases.
+
+Deletion is also more complicated when using linear probing, an item cannot simply be deleted because when looking up an item it could have the potential not to be found, if the search were to come across an empty slot it would stop searching, so for this reason ***tomb stones*** are often used. Instead of deleting the element from the slot and allowing the slot to remain empty it is marked for deletion, until an item is inserted into its place.
 
 #### Quadratic Probing
 
