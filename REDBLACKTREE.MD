@@ -67,12 +67,24 @@ When inserting a node *z* it is inserted as if it were a normal key into a binar
 ### Fixup operation on tree
 
 <p align="left">
-  <img src="images/rb_fixup_operation.PNG">
+  <img src="images/fix_up_operation.PNG">
 </p>
 
 ### Rules for fixing up
 
-The rules for fixing up a node are as follows:
+When inserting a new node there are a number of potential property violations:
 
+* The new node (red) is the root node
+* Double red violation
 
+The first violation is simple to fix and can be dealt with by `RB-INSERT-FIXUP` (see line 16).
 
+The double red problem is more problematic and needs further analysis, a  set of rules govern the inserting of a node that also covers fixing up of a double red.
+
+* Always insert new node as a `RED` leaf node like a normal binary tree insert
+* If new node is root, colour it black and exit
+* If parent of new node is black, exit
+* If ***parent of new node is red*** (double red), check the colour of new nodes `UNCLE`
+  * If uncle is `RED` recolour grandparent red, recolour parent `BLACK`, recolour uncle `BLACK`, check whether recoloured grandparent violates any properties of red black tree by treating it as new node
+  * If uncle is `BLACK` and new node is ***right child***, perform `LEFT ROTATE` on new nodes parent and now treat old parent as new node (this leads to case three)
+  * If uncle is `BLACK` and new node is ***left child*** perform right rotation on grand parent of new node and swap colours
