@@ -2,11 +2,13 @@
 
 An array is an **indexed** data type that holds items of the **same type**, so every item in an array takes up the same amount of space in memory and in most programming languages an array is implemented as a **static datatype** which means its size is fixed at creation time and cannot be changed at runtime.
 
-Entries in an array are called **elements** and each element in an array is identified by an index which usually starts from zero [0] and identifies the elements position in the array, in manyy programming languages an array is specified using a pair of square brackets.
+Entries in an array are called **elements** and each element in an array is identified by an index which usually starts from zero [0] and identifies the elements position in the array, in many programming languages an array is specified using a pair of square brackets.
 
 All arrays consist of **contiguous memory locations**, the lowest address corresponds to the first element and the highest address to the last element. This makes array access extremely fast and generally accessing an element in an array is in constant time, Θ(1). 
 
-When an array is accessed, and because the elements in an array are contigous in memory the starting address is retrieved and then the index is added to it in order to get the address of the element that is to be retrieved. Attempting to access an element value outside the upper or lower boundary of an array will result in the programming languages equivelent of an ArrayIndexOutOfBoundException, that is that code has attempted to use an index which is out of bounds for the array in question.
+When an array is accessed, and because the elements in an array are contigous in memory the starting address is retrieved and then the index is added to it in order to get the address of the element that is to be retrieved. 
+
+Attempting to access an element value outside the upper or lower boundary of an array will result in the programming languages equivalent of an ArrayIndexOutOfBoundException, that is that code has attempted to use an index which is out of bounds for the array in question.
 
 To access the element at the 56th location in an array in java, the following syntax is used:
 
