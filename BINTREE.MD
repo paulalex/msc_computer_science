@@ -41,7 +41,7 @@ The tree below is no longer full because the right child node of the root node i
 
 A nearly complete binary tree is a tree where all internal nodes ***except those on the last level*** have exactly two children and all leaf nodes are filled from the left. This type of tree is also referred to as a *complete binary tree* in some literature.
 
-The tree below is nearly complete as it meets the criteria above but it also fails to meet the criteria for a **full tree** which says that all leaf nodes must have the same depth.
+The tree below is nearly complete as it meets the criteria above and also meets the criteria for a **full tree**, bur fails the criteria for a **complete tree** which says that all leaf nodes must have the same depth.
 
 <p align="left">
   <img src="images/full_incomplete_tree.PNG">
